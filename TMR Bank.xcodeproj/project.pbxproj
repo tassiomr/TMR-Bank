@@ -15,6 +15,15 @@
 		18EFF237250BA32900834E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EFF235250BA32900834E21 /* LaunchScreen.storyboard */; };
 		18EFF242250BA32900834E21 /* TMR_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF241250BA32900834E21 /* TMR_BankTests.swift */; };
 		18EFF24D250BA32900834E21 /* TMR_BankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF24C250BA32900834E21 /* TMR_BankUITests.swift */; };
+		18EFF25E250BA3FD00834E21 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF25D250BA3FD00834E21 /* Analytics.swift */; };
+		18EFF260250BA40F00834E21 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF25F250BA40F00834E21 /* HomeView.swift */; };
+		18EFF263250BA51600834E21 /* TRInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF262250BA51600834E21 /* TRInput.swift */; };
+		18EFF266250BA71A00834E21 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF265250BA71A00834E21 /* DataSingleton.swift */; };
+		18EFF268250BA95200834E21 /* TRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF267250BA95200834E21 /* TRButton.swift */; };
+		18EFF26A250BF01300834E21 /* TRAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF269250BF01300834E21 /* TRAvatar.swift */; };
+		18EFF26C250BF38700834E21 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF26B250BF38700834E21 /* CreditCard.swift */; };
+		18FC97C4250CF40900F5087B /* ActivityBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC97C3250CF40900F5087B /* ActivityBank.swift */; };
+		18FE6B62250D26EE0071AE2C /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE6B61250D26EE0071AE2C /* NavigationModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		18EFF248250BA32900834E21 /* TMR BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMR BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFF24C250BA32900834E21 /* TMR_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMR_BankUITests.swift; sourceTree = "<group>"; };
 		18EFF24E250BA32900834E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EFF25D250BA3FD00834E21 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		18EFF25F250BA40F00834E21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18EFF262250BA51600834E21 /* TRInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRInput.swift; sourceTree = "<group>"; };
+		18EFF265250BA71A00834E21 /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
+		18EFF267250BA95200834E21 /* TRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRButton.swift; sourceTree = "<group>"; };
+		18EFF269250BF01300834E21 /* TRAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRAvatar.swift; sourceTree = "<group>"; };
+		18EFF26B250BF38700834E21 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		18FC97C3250CF40900F5087B /* ActivityBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBank.swift; sourceTree = "<group>"; };
+		18FE6B61250D26EE0071AE2C /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +117,13 @@
 		18EFF229250BA32700834E21 /* TMR Bank */ = {
 			isa = PBXGroup;
 			children = (
+				18EFF264250BA70800834E21 /* Helpers */,
+				18EFF261250BA50400834E21 /* Components */,
+				18EFF25C250BA38900834E21 /* Controllers */,
+				18EFF25B250BA37C00834E21 /* Views */,
+				18EFF25A250BA37400834E21 /* Models */,
 				18EFF22A250BA32700834E21 /* AppDelegate.swift */,
 				18EFF22C250BA32700834E21 /* SceneDelegate.swift */,
-				18EFF22E250BA32700834E21 /* ContentView.swift */,
 				18EFF230250BA32900834E21 /* Assets.xcassets */,
 				18EFF235250BA32900834E21 /* LaunchScreen.storyboard */,
 				18EFF238250BA32900834E21 /* Info.plist */,
@@ -134,6 +156,51 @@
 				18EFF24E250BA32900834E21 /* Info.plist */,
 			);
 			path = "TMR BankUITests";
+			sourceTree = "<group>";
+		};
+		18EFF25A250BA37400834E21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18EFF25B250BA37C00834E21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18EFF22E250BA32700834E21 /* ContentView.swift */,
+				18EFF25D250BA3FD00834E21 /* Analytics.swift */,
+				18EFF25F250BA40F00834E21 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18EFF25C250BA38900834E21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18EFF261250BA50400834E21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18EFF262250BA51600834E21 /* TRInput.swift */,
+				18EFF267250BA95200834E21 /* TRButton.swift */,
+				18EFF269250BF01300834E21 /* TRAvatar.swift */,
+				18EFF26B250BF38700834E21 /* CreditCard.swift */,
+				18FC97C3250CF40900F5087B /* ActivityBank.swift */,
+				18FE6B61250D26EE0071AE2C /* NavigationModifier.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18EFF264250BA70800834E21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18EFF265250BA71A00834E21 /* DataSingleton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +335,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EFF22B250BA32700834E21 /* AppDelegate.swift in Sources */,
+				18EFF26A250BF01300834E21 /* TRAvatar.swift in Sources */,
+				18FC97C4250CF40900F5087B /* ActivityBank.swift in Sources */,
 				18EFF22D250BA32700834E21 /* SceneDelegate.swift in Sources */,
+				18EFF263250BA51600834E21 /* TRInput.swift in Sources */,
+				18EFF268250BA95200834E21 /* TRButton.swift in Sources */,
+				18EFF25E250BA3FD00834E21 /* Analytics.swift in Sources */,
+				18EFF26C250BF38700834E21 /* CreditCard.swift in Sources */,
+				18EFF266250BA71A00834E21 /* DataSingleton.swift in Sources */,
+				18EFF260250BA40F00834E21 /* HomeView.swift in Sources */,
+				18FE6B62250D26EE0071AE2C /* NavigationModifier.swift in Sources */,
 				18EFF22F250BA32700834E21 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

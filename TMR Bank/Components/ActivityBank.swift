@@ -20,7 +20,6 @@ struct Values: View {
             Text("$" + value)
                 .font(.headline)
                 .foregroundColor(.white)
-            
         }
         .padding(0)
     }
@@ -33,11 +32,14 @@ struct ActivityBank: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 35) {
             HStack {
+                Spacer()
                 Circle()
                     .frame(width: 65, height: 65)
                     .opacity(0)
                     .overlay(Circle().stroke(lineWidth: 6).fill(Color.white))
                     .padding(.trailing)
+                Spacer()
+                Spacer()
                 VStack(alignment: .leading) {
                     Text("Bank Activity")
                         .font(.title)
@@ -49,6 +51,7 @@ struct ActivityBank: View {
                         Values(title: "Cashout", value: cashoutValue)
                     }
                 }
+                Spacer()
             }
             
         }.frame(width: UIScreen.main.bounds.width * 0.90, height: 140)

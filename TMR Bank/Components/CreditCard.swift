@@ -19,38 +19,39 @@ struct CreditCard: View {
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
-                                    .offset(x: -48)
+                    .offset(x: 32)
+                Spacer()
                 HStack {
-                Circle()
-                    .fill(Color.yellow)
-                    .frame(width: 25, height: 25)
-                    .shadow(radius: 15)
-                                    .offset(x: -64)
-                
-                Circle()
-                                        .offset(x: -84)
-                    .fill(Color.red)
-                    .frame(width: 25, height: 25)
-                    .overlay(Circle().stroke(Color.white, lineWidth: 1).shadow(radius: 1).offset(x: -84))
+                    Circle()
+                        .fill(Color.yellow)
+                        .frame(width: 25, height: 25)
+                        .shadow(radius: 3)
+                        .offset(x: -64)
+                    
+                    Circle()
+                        .offset(x: -84)
+                        .fill(Color.red)
+                        .frame(width: 25, height: 25)
+                        .overlay(Circle().stroke(Color.white, lineWidth: 1).shadow(radius: 3).offset(x: -84))
                 }
-            }.frame(width: UIScreen.main.bounds.width * 0.90)
+            }.frame(width: UIScreen.main.bounds.width * 0.9)
             
             VStack {
-            Text("Balance")
-                .font(.caption)
-                .fontWeight(.bold)
-                .foregroundColor(.gray)
-                .offset(x: 15, y: 10)
-            
-            
-            Text("$" + balance)
-                .font(.headline)
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-                .offset(x: 32, y: 12)
+                Text("Balance")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                    .offset(x: 15, y: 10)
+                
+                
+                Text("$" + balance)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                    .offset(x: 32, y: 12)
             }
             
-        }.frame(width: UIScreen.main.bounds.width * 0.90, height: 180)
+        }.frame(width: UIScreen.main.bounds.width * 0.9, height: 180)
             .background(Color.white)
             .cornerRadius(30)
             .shadow(color: .gray, radius: 5, x: 0, y: 0)
@@ -59,6 +60,6 @@ struct CreditCard: View {
 
 struct CreditCard_Previews: PreviewProvider {
     static var previews: some View {
-        CreditCard(cardNumber: "111133344", balance: "4000,00")
+        CreditCard(cardNumber: "**** 3344", balance: "4000,00")
     }
 }
